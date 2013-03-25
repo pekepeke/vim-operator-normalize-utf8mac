@@ -1,0 +1,55 @@
+*operator-normalize-utf8mac.txt*    Operator to replace normalized utf8-mac text.
+
+Version: 0.0.1
+Author : pekepeke <pekepekesamurai+vim@gmail.com>
+License: MIT
+         <http://opensource.org/licenses/MIT>
+
+=============================================================================
+CONTENTS                            *operator-normalize-utf8mac-contents*
+
+operator-normalize-utf8mac |operator-normalize-utf8mac-introduction|
+  CUSTOMIZE                 |operator-normalize-utf8mac-customize|
+    KEY MAPPINGS         |operator-normalize-utf8mac-key-mappings|
+    EXAMPLES                 |operator-normalize-utf8mac-examples|
+
+=============================================================================
+operator-normalize-utf8mac         *operator-normalize-utf8mac-introduction*
+
+
+
+*operator-normalize-utf8mac* is a Vim plugin to provide an operator mapping
+to normalize utf8-mac text.
+
+Requirement:
+    - |operator-user| (Recommend latest version at https://github.com/kana/vim-operator-user)
+
+Latest version:
+    https://github.com/pekepeke/vim-operator-normalize-utf8mac
+
+
+=============================================================================
+CUSTOMIZE                           *operator-normalize-utf8mac-customize*
+
+
+-----------------------------------------------------------------------------
+KEY MAPPINGS                   *operator-normalize-utf8mac-key-mappings*
+
+
+<Plug>(operator-normalize_utf8mac){motion} *<Plug>(operator-normalize_utf8mac){motion}*
+
+>
+    Replace text that {motion} moves over with normalized texts.
+<
+
+
+-----------------------------------------------------------------------------
+EXAMPLES                           *operator-normalize-utf8mac-examples*
+
+>
+    nmap <expr> ,n <Plug>(operator-normalize_utf8mac)
+<
+
+
+
+vim:tw=78:ts=8:ft=help:norl:
